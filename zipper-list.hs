@@ -1,8 +1,8 @@
 import Data.Maybe (fromJust)
 
 -- L(x) = 1/(1-x)
--- L'(x) = 1/(1-x)^2
--- Z_L(x) = x/(1-x)^2 = x L(x)^2
+-- L'(x) = 1/(1-x)^2 = L(x)^2
+-- Z_L(x) = x L(x)^2
 
 data ZList a = Focus a [a] [a]
 

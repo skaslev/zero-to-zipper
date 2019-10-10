@@ -8,10 +8,7 @@ import Data.Maybe (fromJust)
 data BinTree a = Leaf | Branch a (BinTree a) (BinTree a)
   deriving Show
 
-data Segment a
-  = SLeft a (BinTree a)
-  | SRight a (BinTree a)
-
+data Segment a = SLeft a (BinTree a) | SRight a (BinTree a)
 data ZBinTree a = Focus a (BinTree a) (BinTree a) [Segment a]
 
 toZipper :: BinTree a -> Maybe (ZBinTree a)
