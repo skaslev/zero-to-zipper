@@ -267,13 +267,13 @@ def comp {a b c} (i : iso a b) (j : iso b c) : iso a c :=
     \end{align*}
     \1 Pattern matching on disjoint union
     \begin{align*}
-      A \oplus B \to C &= (A \to C) \otimes (B \to C) \\
+      (A \oplus B) \to C &= (A \to C) \otimes (B \to C) \\
       c^{a+b} &= c^{a} c^{b}
     \end{align*}
     \1 Function currying
     \begin{align*}
-      A \to B \to C &= A \otimes B \to C \\
-      c^{b^{a}} &= c^{a b}
+      A \to B \to C &= (A \otimes B) \to C \\
+      (c^b)^a &= c^{a b}
     \end{align*}
   \end{outline}
 \end{frame}
